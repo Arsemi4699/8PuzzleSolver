@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8 Puzzle Solver</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">8 Puzzle Solver</h1>
+      <section class="inputSelector">
+        <h3>Input selection:</h3>
+        <input type="radio" name="inputMethod" id="manualInput" checked />
+        <label for="manualInput">manual Input</label>
+        <br />
+        <input type="radio" name="inputMethod" id="randomInput" />
+        <label for="randomInput">random Input</label>
+        <br />
+        <input type="radio" name="inputMethod" id="fileInput" />
+        <label for="fileInput">file Input</label>
+        <br />
+      </section>
+      <section class="inputControl">
+        <h3>Puzzle:</h3>
+        <div id="inputControl"></div>
+      </section>
+      <section class="methodSelector">
+        <h3>Algorithm selection:</h3>
+        <input type="radio" name="solvingMethod" id="BFSMethod" checked />
+        <label for="BFSMethod">BFS</label>
+        <br />
+        <input type="radio" name="solvingMethod" id="UCSMethod" />
+        <label for="UCSMethod">UCS</label>
+        <br />
+        <input type="radio" name="solvingMethod" id="IDSMethod" />
+        <label for="IDSMethod">IDS</label>
+        <br />
+        <input type="radio" name="solvingMethod" id="AStarMethod" />
+        <label for="AStarMethod">A star</label>
+        <br />
+        <div class="runAtip">
+          <button id="run">solve it</button>
+          <span id="tip"></span>
+        </div>
+      </section>
+      <section class="SolvingPath">
+        <h3>solving Path:</h3>
+        <div id="SolvingPath"></div>
+      </section>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
